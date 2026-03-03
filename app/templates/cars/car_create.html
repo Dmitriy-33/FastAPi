@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Добавление авто{% endblock %}
+
+{% block header %}
+    {{ title }}
+{% endblock %}
+
+
+{% block content %}
+
+        <form method="post" action="/car_create/">
+            <label>Марка: <input type="text" name="brand" required></label><br><br>
+            <label>Модель: <input type="text" name="model" required></label><br><br>
+            <label>Год выпуска: <input type="number" name="year" required></label><br><br>
+            <label>Двигатель: <input type="text" name="engine" required></label><br><br>
+            <label>Мощность: <input type="text" name="power" required></label><br><br>
+            <label>Цвет: <input type="text" name="color" required></label><br><br>
+            <button type="submit">Добавить</button>
+        </form>
+
+{% endblock %}

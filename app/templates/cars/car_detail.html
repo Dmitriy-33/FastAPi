@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Детализация{% endblock %}
+
+{% block header %}
+    {{ title }}
+{% endblock %}
+
+
+{% block content %}
+
+
+        <div class="card" style="min-width: 200px; flex: 1 1 200px;">
+            <div class="card-body">
+                <p class="card-text"><b>Марка: {{ car.marka }}</b></p>
+                <p class="card-text"><b>Модель: {{ car.model }}</b></p>
+                <p class="card-text"><b>Год выпуска: {{ car.year }}</b></p>
+                <p class="card-text"><b>Двигатель: {{ car.engine }}</b></p>
+                <p class="card-text"><b>Мощность: {{ car.power }}</b></p>
+                <p class="card-text"><b>Цвет: {{ car.color }}</b></p>
+            </div>
+            <a href="{{ url_for('html_car_list') }}" class="btn btn-primary">Назад</a>
+        </div>
+
+
+{% endblock %}
