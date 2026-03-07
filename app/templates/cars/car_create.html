@@ -9,8 +9,8 @@
 
 {% block content %}
 
-        <form method="post" action="/car_create/">
-            <label>Марка: <input type="text" name="brand" required></label><br><br>
+        <form method="post" action="/api/car_create/">
+            <label>Марка: <input type="text" name="marka" required></label><br><br>
             <label>Модель: <input type="text" name="model" required></label><br><br>
             <label>Год выпуска: <input type="number" name="year" required></label><br><br>
             <label>Двигатель: <input type="text" name="engine" required></label><br><br>
@@ -18,5 +18,6 @@
             <label>Цвет: <input type="text" name="color" required></label><br><br>
             <button type="submit">Добавить</button>
         </form>
+
 
 {% endblock %}
